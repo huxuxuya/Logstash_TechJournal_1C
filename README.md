@@ -1,0 +1,1 @@
+# logstash_1C_input_elastic_output
