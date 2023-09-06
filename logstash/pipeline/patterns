@@ -1,0 +1,10 @@
+INT (?:[+-]?(?:[0-9]+))
+WORD \b\w+\b
+DURATION [0-9]*
+DaHFILE [0-9]{8}
+TYPE [A-Z]*
+NESTING [0-9]
+PROCESS WORD
+PPROCESSNAME WORD
+MINUTE (?:[0-5][0-9])
+TIME (%{MINUTE})(?::%{SECOND})
