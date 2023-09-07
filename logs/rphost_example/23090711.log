@@ -1,0 +1,9 @@
+48:31.250034-120475018,CONN,0,process=rphost,OSThread=20248,ClientID=71,Txt=Outgoing connection closed
+48:52.125007-27062003,CALL,1,process=rphost,OSThread=10440,t:clientID=92,callWait=0,first=1,Usr=DefUser,SessionID=1,p:processName=ka-2,Func=Background job,Module=РаспределениеВзаиморасчетовВызовСервера,Method=ОтложенноеПроведениеПоРасчетамСПартнерами,Memory=566456964,MemoryPeak=571052700,InBytes=6165231085,OutBytes=6217269159,CpuTime=19281250
+48:52.125009-27062007,CONN,0,process=rphost,OSThread=10440,t:clientID=92,t:clientID=92,t:computerName=PRD-1CSRV-01,t:applicationName=BackgroundJob,t:connectID=245685,Calls=8
+48:58.422020-6234011,SDBL,4,process=rphost,p:processName=ka-2,OSThread=18544,t:clientID=91,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=245686,SessionID=2,Usr=DefUser,DBMS=DBMSSQL,DataBase=prd-1csql-02\ka-2,Trans=0,Func=Transaction,Func=CommitTransaction,Context='
+ОбщийМодуль.ЦентрМониторингаСлужебный.Модуль : 575 : УстановитьПараметрыЦентраМониторинга(ПараметрыЦентраМониторинга);
+	ОбщийМодуль.ЦентрМониторингаСлужебный.Модуль : 2077 : ЗафиксироватьТранзакцию();'
+48:58.438001-6249993,SDBL,3,process=rphost,p:processName=ka-2,OSThread=18544,t:clientID=91,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=245686,SessionID=2,Usr=DefUser,DBMS=DBMSSQL,DataBase=prd-1csql-02\ka-2,Trans=0,Func=HoldConnection,Context='
+ОбщийМодуль.ЦентрМониторингаСлужебный.Модуль : 575 : УстановитьПараметрыЦентраМониторинга(ПараметрыЦентраМониторинга);
+	ОбщийМодуль.ЦентрМониторингаСлужебный.Модуль : 2077 : ЗафиксироватьТранзакцию();'

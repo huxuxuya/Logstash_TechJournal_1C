@@ -1,0 +1,11 @@
+56:22.974041-0,CLSTR,3,process=rphost,p:processName=Conversion-3,OSThread=8900,t:clientID=82,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=759921,SessionID=121,Usr=DefUser,Event=Successful service call,RmngrURL=tcp://PRD-1CSRV-01:1541,ServiceName=DbCopiesService,InfoBase=Conversion-3,TargetCall=0
+56:23.396018-0,CLSTR,6,process=rphost,p:processName=Conversion-3,OSThread=8900,t:clientID=82,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=759921,SessionID=121,Usr=DefUser,DBMS=DBMSSQL,DataBase=prd-1csql-02\Conversion-3,Event=Successful service call,RmngrURL=tcp://PRD-1CSRV-01:1541,ServiceName=TransactionLockService,InfoBase=Conversion-3,TargetCall=0,Context='
+ОбщийМодуль.РаботаСФайламиСлужебный.Модуль : 1929 : ОбщегоНазначения.ПриНачалеВыполненияРегламентногоЗадания(Метаданные.РегламентныеЗадания.ИзвлечениеТекста);
+	ОбщийМодуль.ОбщегоНазначения.Модуль : 5471 : Справочники.ВерсииРасширений.ЗарегистрироватьИспользованиеВерсииРасширений();
+		Справочник.ВерсииРасширений.МодульМенеджера : 220 : ВерсияРасширений = ПараметрыСеанса.ВерсияРасширений;
+			МодульСеанса : 8 : СтандартныеПодсистемыСервер.УстановкаПараметровСеанса(ИменаПараметровСеанса);
+				ОбщийМодуль.СтандартныеПодсистемыСервер.Модуль : 66 : Справочники.ВерсииРасширений.УстановкаПараметровСеанса(ИменаПараметровСеанса, УстановленныеПараметры);
+					Справочник.ВерсииРасширений.МодульМенеджера : 39 : ПараметрыСеанса.ВерсияРасширений = ВерсияРасширений();
+						Справочник.ВерсииРасширений.МодульМенеджера : 628 : Блокировка.Заблокировать();'
+56:23.552002-0,CONN,0,process=rphost,OSThread=11524,ClientID=84,Protected=0,Txt='Accepted, client=(23)[::1]:65413, server=(23)[::1]:1564, marker=1'
+56:23.568016-0,CONN,0,process=rphost,OSThread=6308,Txt='Connection added to ping direction on server: directionID=db344f0f-6a01-46e9-9fc2-08ea0e2a9843,clientID=84,address=[::1]:65413'

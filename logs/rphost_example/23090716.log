@@ -1,0 +1,44 @@
+49:06.364096-0,EXCP,5,process=rphost,p:processName=uat-2,OSThread=6648,t:clientID=5072,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=1703736,SessionID=25284,Usr=Мухоморов,DBMS=DBMSSQL,DataBase=prd-1csql-02\uat-2,Exception=DataBaseException,Descr='Соединение с сервером баз данных разорвано администратором
+Сеанс работы завершен администратором.'
+49:06.364097-0,EXCPCNTX,0,ClientComputerName=PRD-1CSRV-01,ServerComputerName=PRD-1CSRV-01,UserName=Мухоморов,ConnectString='Srvr="PRD-1CSRV-01";Ref="uat-2";'
+49:06.364102-7,EXCPCNTX,4,SrcName=DBMSSQL,process=rphost,p:processName=uat-2,OSThread=6648,t:clientID=5072,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=1703736,SessionID=25284,Usr=Мухоморов,DBMS=DBMSSQL,DataBase=prd-1csql-02\uat-2,Trans=0
+49:06.364104-15789,EXCPCNTX,3,SrcName=SDBL,process=rphost,p:processName=uat-2,OSThread=6648,t:clientID=5072,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=1703736,SessionID=25284,Usr=Мухоморов,DBMS=DBMSSQL,DataBase=prd-1csql-02\uat-2,Trans=0,Sdbl='SELECT ALLOWED TOP 30
+Q_000_T_001.ID sf_2,
+Q_000_T_001.Marked,
+Q_000_T_001.Number,
+Q_000_T_001.Date_Time sf_1,
+Q_000_T_001.Posted,
+Q_000_T_001.Fld15662,
+Q_000_T_001.Fld15663,
+Q_000_T_001.Fld15664,
+Q_000_T_001.Fld15665,
+Q_000_T_001.Fld15666,
+Q_000_T_001.Fld15667,
+Q_000_T_001.Fld15669,
+Q_000_T_001.Fld15670,
+Q_000_T_001.Fld16097,
+Q_000_T_001.Fld16098,
+Q_000_T_001.Fld16099
+FROM
+Document13923 Q_000_T_001
+WHERE
+((Q_000_T_001.Number LIKE "%у%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15666 AS REF(Reference88)).Description LIKE "%у%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15665 AS REF(Reference88)).Description LIKE "%у%" ESCAPE "/") OR (Q_000_T_001.Fld15670 LIKE "%у%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld16098 AS REF(Reference63)).Description LIKE "%у%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld16097 AS REF(Reference63)).Description LIKE "%у%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15662 AS REF(Reference70)).Description LIKE "%у%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15669 AS REF(Reference79)).Description LIKE "%у%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15664 AS REF(Reference156)).Description LIKE "%у%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15663 AS REF(Reference156)).Description LIKE "%у%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15667 AS REF(Reference77)).Description LIKE "%у%" ESCAPE "/")) AND ((Q_000_T_001.Number LIKE "%964%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15666 AS REF(Reference88)).Description LIKE "%964%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15665 AS REF(Reference88)).Description LIKE "%964%" ESCAPE "/") OR (Q_000_T_001.Fld15670 LIKE "%964%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld16098 AS REF(Reference63)).Description LIKE "%964%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld16097 AS REF(Reference63)).Description LIKE "%964%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15662 AS REF(Reference70)).Description LIKE "%964%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15669 AS REF(Reference79)).Description LIKE "%964%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15664 AS REF(Reference156)).Description LIKE "%964%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15663 AS REF(Reference156)).Description LIKE "%964%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15667 AS REF(Reference77)).Description LIKE "%964%" ESCAPE "/")) AND ((Q_000_T_001.Number LIKE "%х%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15666 AS REF(Reference88)).Description LIKE "%х%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15665 AS REF(Reference88)).Description LIKE "%х%" ESCAPE "/") OR (Q_000_T_001.Fld15670 LIKE "%х%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld16098 AS REF(Reference63)).Description LIKE "%х%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld16097 AS REF(Reference63)).Description LIKE "%х%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15662 AS REF(Reference70)).Description LIKE "%х%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15669 AS REF(Reference79)).Description LIKE "%х%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15664 AS REF(Reference156)).Description LIKE "%х%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15663 AS REF(Reference156)).Description LIKE "%х%" ESCAPE "/") OR (CAST(Q_000_T_001.Fld15667 AS REF(Reference77)).Description LIKE "%х%" ESCAPE "/")) AND ((Q_000_T_001.Date_Time < DATETIME(2016,7,28,18,54,31)) OR (Q_000_T_001.Date_Time  =  DATETIME(2016,7,28,18,54,31)) AND (Q_000_T_001.ID < 13923:80f300155d01670011e654dba93901b8))
+
+ORDER BY
+sf_1 DESC,
+sf_2 DESC
+'
+49:06.364107-15798,EXCPCNTX,2,SrcName=SDBL,process=rphost,p:processName=uat-2,OSThread=6648,t:clientID=5072,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=1703736,SessionID=25284,Usr=Мухоморов,DBMS=DBMSSQL,DataBase=prd-1csql-02\uat-2,Trans=0,Func=HoldConnection
+49:06.364108-874823,EXCPCNTX,1,SrcName=CALL,process=rphost,OSThread=6648,t:clientID=5072,callWait=0,first=true,Usr=Мухоморов,SessionID=25284(24081),p:processName=uat-2,Func=Dynamic list search,Form=Документ.моноАктПриемаПередачиТС.Форма.ФормаСписка,FormItem=Список,SearchString=у 964 х
+49:06.364109-874826,EXCPCNTX,0,SrcName=CONN,process=rphost,OSThread=6648,t:clientID=5072
+49:06.364111-0,EXCP,5,process=rphost,p:processName=uat-2,OSThread=6648,t:clientID=5072,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=1703736,SessionID=25284,Usr=Мухоморов,DBMS=DBMSSQL,DataBase=prd-1csql-02\uat-2,Exception=dc31263e-ecbf-41bd-9b3a-7b55897d5fd6,Descr='src\rscalls\src\RemoteCallListenerImpl.cpp(4003):
+dc31263e-ecbf-41bd-9b3a-7b55897d5fd6: Соединение с сервером баз данных разорвано администратором
+Сеанс работы завершен администратором.'
+49:06.364171-0,EXCP,2,process=rphost,p:processName=uat-2,OSThread=6648,t:clientID=5072,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=1703736,SessionID=25284,Usr=Мухоморов,Exception=dc31263e-ecbf-41bd-9b3a-7b55897d5fd6,Descr='src\rserver\src\ServerJobExecutor.cpp(1176):
+dc31263e-ecbf-41bd-9b3a-7b55897d5fd6: Соединение с сервером баз данных разорвано администратором
+Сеанс работы завершен администратором.'
+49:06.364274-0,EXCP,3,process=rphost,p:processName=uat-2,OSThread=6648,t:clientID=5072,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=1703736,SessionID=25284,Usr=Мухоморов,Exception=SeanceContextException,Descr='Сеанс отсутствует или удален
+ID=8e4bfab5-67df-4cc5-997c-ed9c23153d9b, File=D:\Jenkins\ci_builder\WindowsBuild2_YO609WYKYESI\Platform\src\rserver\src\ClusterDistribImpl.cpp(1591)'
+49:06.364277-0,EXCP,2,process=rphost,p:processName=uat-2,OSThread=6648,t:clientID=5072,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=1703736,SessionID=25284,Usr=Мухоморов,Exception=60c686dc-798f-4d17-aadb-a90156a16eb8,Descr='src\rserver\src\RMngrCalls.cpp(503):
+60c686dc-798f-4d17-aadb-a90156a16eb8: Сеанс отсутствует или удален
+ID=8e4bfab5-67df-4cc5-997c-ed9c23153d9b, File=D:\Jenkins\ci_builder\WindowsBuild2_YO609WYKYESI\Platform\src\rserver\src\ClusterDistribImpl.cpp(1591)'

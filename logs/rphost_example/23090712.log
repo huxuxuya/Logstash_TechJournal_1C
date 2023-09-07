@@ -1,0 +1,8 @@
+08:25.294004-6124998,CONN,0,process=rphost,OSThread=22656,t:clientID=43,t:clientID=43,t:computerName=PRD-1CSRV-01,t:applicationName=BackgroundJob,t:connectID=141637,Calls=4
+08:26.419016-0,EXCP,3,process=rphost,p:processName=bp-best-tents,OSThread=22176,t:clientID=32,t:applicationName=BackgroundJob,t:computerName=PRD-1CSRV-01,t:connectID=141505,SessionID=1,Usr=DefUser,Exception=8d366056-4d5a-4d88-a207-0ae535b7d28e,Descr='src\rserver\src\ServerJobExecutor.cpp(1238):
+8d366056-4d5a-4d88-a207-0ae535b7d28e: При получении данных СЭДО ФСС происходили ошибки. Подробную информацию об ошибках см. в технологическом журнале.
+{ОбщийМодуль.ЭлектронныйДокументооборотСФСС.Модуль(70)}:		ВызватьИсключение(ОписаниеОшибки);
+'
+08:27.247005-71032993,CALL,1,process=rphost,OSThread=22176,t:clientID=32,callWait=0,first=1,Usr=DefUser,SessionID=1,p:processName=bp-best-tents,Func=Background job,Module=ЭлектронныйДокументооборотСФСС,Method=ВыполнитьОбменСФСС,Memory=26885840,MemoryPeak=534054736,InBytes=4830439744,OutBytes=4875026531,CpuTime=25281250
+08:27.247006-71032995,CONN,0,process=rphost,OSThread=22176,t:clientID=32,t:clientID=32,t:computerName=PRD-1CSRV-01,t:applicationName=BackgroundJob,t:connectID=141505,Calls=2
+0
