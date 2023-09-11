@@ -16,6 +16,10 @@ services:
     environment:
       - discovery.type=single-node
       - xpack.security.enabled=false
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "3"
   kibana:
     image: docker.elastic.co/kibana/kibana:7.15.0  
     container_name: kibana_lg
@@ -26,6 +30,10 @@ services:
       - "5601:5601"
     depends_on:
       - elasticsearch
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "3"
   logstash:
     image: logstash:7.16.1
     container_name: log
@@ -33,10 +41,8 @@ services:
       discovery.seed_hosts: logstash
       LS_JAVA_OPTS: "-Xms512m -Xmx512m"
     volumes:
-      - ./logstash/pipeline/logstash-nginx.config:/usr/share/logstash/pipeline/logstash-nginx.config
       - ./logstash/pipeline/logstash-tj.config:/usr/share/logstash/pipeline/logstash-tj.config
       - ./logstash/pipeline/patterns:/usr/share/logstash/pipeline/patterns
-      - ./logstash/nginx.log:/home/nginx.log
       - ./logs:/var/log/logtj
     ports:
       - "5005:5005/tcp"
@@ -47,4 +53,8 @@ services:
       - elasticsearch
     networks:
       - elastic
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "3"
     command: logstash -f /usr/share/logstash/pipeline/logstash-tj.config
