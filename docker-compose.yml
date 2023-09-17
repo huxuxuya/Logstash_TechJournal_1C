@@ -5,7 +5,7 @@ networks:
   driver: bridge
 services:
   elasticsearch:    
-    image: docker.elastic.co/elasticsearch/elasticsearch:7.15.0
+    image: elasticsearch:7.17.12
     container_name: es
     restart: unless-stopped
     networks:
@@ -21,7 +21,7 @@ services:
         max-size: "100m"
         max-file: "3"
   kibana:
-    image: docker.elastic.co/kibana/kibana:7.15.0  
+    image: kibana:7.17.12  
     container_name: kibana_lg
     restart: unless-stopped
     networks:
