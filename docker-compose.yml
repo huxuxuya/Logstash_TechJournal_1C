@@ -1,0 +1,60 @@
+version: "3.7"
+networks:
+ elastic:
+  name: elastic
+  driver: bridge
+services:
+  elasticsearch:    
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.15.0
+    container_name: es
+    restart: unless-stopped
+    networks:
+      - elastic
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "3"
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.15.0  
+    container_name: kibana_lg
+    restart: unless-stopped
+    networks:
+      - elastic
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "3"
+  logstash:
+    image: logstash:7.16.1
+    container_name: log
+    environment:
+      discovery.seed_hosts: logstash
+      LS_JAVA_OPTS: "-Xms512m -Xmx512m"
+    volumes:
+      - ./logstash/pipeline/logstash-tj.config:/usr/share/logstash/pipeline/logstash-tj.config
+      - ./logstash/pipeline/patterns:/usr/share/logstash/pipeline/patterns
+      - ./logs:/var/log/logtj
+    ports:
+      - "5005:5005/tcp"
+      - "5005:5005/udp"
+      - "5044:5044"
+      - "9600:9600"
+    depends_on:
+      - elasticsearch
+    networks:
+      - elastic
+    logging:
+      options:
+        max-size: "100m"
+        max-file: "3"
+    command: logstash -f /usr/share/logstash/pipeline/logstash-tj.config

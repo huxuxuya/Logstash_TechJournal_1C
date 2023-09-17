@@ -1,0 +1,18 @@
+50:04.611016-0,EXCP,0,process=rmngr,p:processName=DebugQueryTargets,OSThread=12616,Exception=2386a9f7-a5fa-4d5b-9f6e-1179e73f150a,Descr='src\rserver\src\RMngrCalls.cpp(410):
+
+2386a9f7-a5fa-4d5b-9f6e-1179e73f150a: Первичный вызов сервиса пришел в пассивный сервис.'
+
+50:04.611017-0,CLSTR,0,process=rmngr,p:processName=DebugQueryTargets,OSThread=12616,Event=Service call error,RmngrURL=tcp://KRAZ-S-1CASTS01:1569,ServiceName=SessionDataService,TargetCall=0,ServerList='[
+
+0f1e069c-b68c-400e-84eb-432a2a9d411a::name:KRAZ-S-1CASTS01;online:0;safeCallMemoryLimit:0;maxRPIBQuantity:6;servicePrincipalName:
+
+9c909671-525b-4076-bdda-330cb9d0900d::name:KRAZ-S-1CAS03N1;online:1;safeCallMemoryLimit:0;maxRPIBQuantity:4;servicePrincipalName:
+
+d1e02b2e-265c-4d5d-b865-8ace412e01c2::name:KRAZ-S-1CAS03N2;online:1;safeCallMemoryLimit:0;maxRPIBQuantity:4;servicePrincipalName:]',ManagerList='[
+
+15e26335-0da1-4887-b32c-58f69315b1a2::srvrProcessID:eb84a725-ef33-4ab6-94de-4afba981b08f;url:tcp://KRAZ-S-1CAS03N1:1541;isSelf:1;active:1;online:1;main:1;serverID:9c909671-525b-4076-bdda-330cb9d0900d;lastSuccess:1359355122
+
+24fe85b2-f305-4a74-be31-be0e2473c033::srvrProcessID:9647d32f-d597-4932-bb9d-90b8b3071412;url:tcp://KRAZ-S-1CASTS01:1569;isSelf:0;active:1;online:1;main:0;serverID:0f1e069c-b68c-400e-84eb-432a2a9d411a;lastSuccess:1359355043
+
+35f27f0b-15d2-4284-8b35-df95ca0d91af::srvrProcessID:36338bbb-f7b9-498b-a03c-f515ccd59606;url:tcp://KRAZ-S-1CAS03N2:1562;isSelf:0;active:1;online:1;main:0;serverID:d1e02b2e-265c-4d5d-b865-8ace412e01c2;lastSuccess:1358241372]'
+

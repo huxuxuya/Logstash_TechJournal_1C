@@ -1,0 +1,6 @@
+27:11.048000-0,EXCP,2,process=1cv8c,OSThread=5876,OSException=1cv8c_8.3.17.2231_136964f0_20230105112711_2740 enabled external
+27:11.048001-0,EXCPCNTX,0,ClientComputerName=,ServerComputerName=,UserName=,ConnectString=
+27:11.048002-328660996,EXCPCNTX,1,SrcName=CONN,process=1cv8c,OSThread=5876,ClientID=2,Txt=Outgoing connection closed
+27:11.048003-330161003,EXCPCNTX,0,SrcName=PROC,process=1cv8c,OSThread=5876
+27:14.095000-0,CONN,0,process=1cv8c,OSThread=240,Txt='Ping direction statistics: address=192.168.97.93:1571,pingTimeout=15000,pingPeriod=3000,period=10031,packetsSent=4,avgResponseTime=0,maxResponseTime=0,packetsTimedOut=0,packetsLost=1,packetsLostAndFound=0'
+27:16.111000-0,EXCP,2,process=1cv8c,OSThread=5876,DumpError=Created dump file: C:\Users\philippov_i\AppData\Local\1C\1cv8\dumps\1cv8c_8.3.17.2231_136964f0_20230105112711_2740.mdmp

@@ -1,0 +1,29 @@
+48:12.522006-0,EXCP,3,process=rphost,p:processName=empty_sql,OSThread=12856,t:clientID=18,t:applicationName=1CV8C,t:computerName=rrpc171,t:connectID=8,SessionID=1,Usr=Максим Канунников,AppID=1CV8C,Exception=e0417abc-63b4-461b-b1b6-01d2d2b0cca5,Descr='src\rserver\src\SrvrInfoBaseImpl.cpp(10638):
+e0417abc-63b4-461b-b1b6-01d2d2b0cca5: На сервере 1С:Предприятия произошла неисправимая ошибка. Приложение будет закрыто'
+48:12.522009-0,EXCP,3,process=rphost,p:processName=empty_sql,OSThread=12856,t:clientID=18,t:applicationName=1CV8C,t:computerName=rrpc171,t:connectID=8,SessionID=1,Usr=Максим Канунников,AppID=1CV8C,Exception=580392e6-ba49-4280-ac67-fcd6f2180121,Descr='src\vrsbase\src\VResourceInfoBaseImpl.cpp(1204):
+580392e6-ba49-4280-ac67-fcd6f2180121: Неспецифицированная ошибка работы с ресурсом
+Ошибка при выполнении запроса POST к ресурсу /e1cib/logForm:
+e0417abc-63b4-461b-b1b6-01d2d2b0cca5: На сервере 1С:Предприятия произошла неисправимая ошибка. Приложение будет закрыто'
+48:15.085006-0,EXCP,0,process=rphost,OSThread=12856,ClientID=18,Exception=NetDataExchangeException,Descr='server_addr=(23)[fe80::68c4:e66f:3253:1596%15]:55125 descr=10054(0x00002746): An existing connection was forcibly closed by the remote host.  line=2276 file=src\rtrsrvc\src\DataExchangeServerImpl.cpp'
+48:15.085007-0,EXCPCNTX,0,ClientComputerName=,ServerComputerName=,UserName=,ConnectString=
+48:15.085010-0,EXCP,0,process=rphost,OSThread=22272,ClientID=19,Exception=NetDataExchangeException,Descr='server_addr=(23)[fe80::68c4:e66f:3253:1596%15]:55131 descr=10054(0x00002746): An existing connection was forcibly closed by the remote host.  line=2276 file=src\rtrsrvc\src\DataExchangeServerImpl.cpp'
+48:15.085012-0,EXCPCNTX,0,ClientComputerName=,ServerComputerName=,UserName=,ConnectString=
+48:15.085039-0,EXCP,2,process=rphost,p:processName=empty_sql,OSThread=12856,t:clientID=18,t:applicationName=1CV8C,t:computerName=rrpc171,t:connectID=8,Exception=2386a9f7-a5fa-4d5b-9f6e-1179e73f150a,Descr='src\rserver\src\RMngrCalls.cpp(438):
+2386a9f7-a5fa-4d5b-9f6e-1179e73f150a: Первичный вызов сервиса пришел в пассивный сервис.'
+48:15.991013-0,EXCP,3,process=rphost,p:processName=empty_sql,OSThread=12856,t:clientID=18,t:applicationName=1CV8C,t:computerName=rrpc171,t:connectID=8,Exception=SeanceContextException,Descr='Сеанс отсутствует или удален
+ID=8cc4eb60-b0f7-4771-ae2f-58b8a6e677cb, File=src\rserver\src\ClusterDistrib.cpp(1230)'
+48:15.991015-0,EXCP,2,process=rphost,p:processName=empty_sql,OSThread=12856,t:clientID=18,t:applicationName=1CV8C,t:computerName=rrpc171,t:connectID=8,Exception=60c686dc-798f-4d17-aadb-a90156a16eb8,Descr='src\rserver\src\RMngrCalls.cpp(438):
+60c686dc-798f-4d17-aadb-a90156a16eb8: Сеанс отсутствует или удален
+ID=8cc4eb60-b0f7-4771-ae2f-58b8a6e677cb, File=src\rserver\src\ClusterDistrib.cpp(1230)'
+48:15.991016-0,EXCP,2,process=rphost,p:processName=empty_sql,OSThread=12856,t:clientID=18,t:applicationName=1CV8C,t:computerName=rrpc171,t:connectID=8,Exception=60c686dc-798f-4d17-aadb-a90156a16eb8,Descr='src\rserver\src\RMngrCalls.cpp(438):
+60c686dc-798f-4d17-aadb-a90156a16eb8: Сеанс отсутствует или удален
+ID=8cc4eb60-b0f7-4771-ae2f-58b8a6e677cb, File=src\rserver\src\ClusterDistrib.cpp(1230)'
+48:15.991017-0,EXCP,2,process=rphost,p:processName=empty_sql,OSThread=12856,t:clientID=18,t:applicationName=1CV8C,t:computerName=rrpc171,t:connectID=8,Exception=60c686dc-798f-4d17-aadb-a90156a16eb8,Descr='src\rserver\src\RMngrCalls.cpp(116):
+60c686dc-798f-4d17-aadb-a90156a16eb8: Сеанс отсутствует или удален
+ID=8cc4eb60-b0f7-4771-ae2f-58b8a6e677cb, File=src\rserver\src\ClusterDistrib.cpp(1230)'
+48:15.991018-0,EXCP,2,process=rphost,p:processName=empty_sql,OSThread=12856,t:clientID=18,t:applicationName=1CV8C,t:computerName=rrpc171,t:connectID=8,Exception=60c686dc-798f-4d17-aadb-a90156a16eb8,Descr='src\rserver\src\SrvrInfoBaseImpl.cpp(1044):
+60c686dc-798f-4d17-aadb-a90156a16eb8: Сеанс отсутствует или удален
+ID=8cc4eb60-b0f7-4771-ae2f-58b8a6e677cb, File=src\rserver\src\ClusterDistrib.cpp(1230)'
+48:19.804000-0,EXCP,0,process=rphost,OSThread=21672,Exception=d294e384-7ea6-49c6-be96-f3a6e3de1242,Descr='LoadComponent(liccspr):
+d294e384-7ea6-49c6-be96-f3a6e3de1242: Error loading component liccspr: 126(0x0000007E): The specified module could not be found. '
+48:33.726000-0,EXCP,0,process=rphost,OSThread=12856,Exception=d294e384-7ea6-49c6-be96-f3a6e3de1242,Descr='LoadComponent(liccspr):

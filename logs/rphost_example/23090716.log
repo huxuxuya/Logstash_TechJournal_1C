@@ -1,0 +1,39 @@
+16:42.044010-5610008,CONN,0,process=rphost,t:clientID=8023,t:clientID=8023,t:computerName=coocadapp02,t:applicationName=BackgroundJob,t:connectID=152000,Calls=5790
+16:45.013000-0,CONN,0,process=rphost,OSThread=8856,ClientID=8024,Protected=0,Txt='Accepted, client=(23)[::1]:56638, server=(23)[::1]:1567, marker=1'
+16:45.028000-0,CONN,0,process=rphost,OSThread=8856,Txt='Ping direction opened on server: directionID=484d90d5-8056-4909-93f3-7152aa1be439'
+16:45.028001-0,CONN,0,process=rphost,OSThread=8856,Txt='Connection added to ping direction on server: directionID=484d90d5-8056-4909-93f3-7152aa1be439,clientID=8024,address=[::1]:56638'
+16:45.028005-0,CONN,2,process=rphost,OSThread=21004,t:clientID=8024,Txt=Srvr: SrcUserName1: OneCUserDEV@MSK.I-TECO.RU
+16:45.028007-0,CONN,2,process=rphost,OSThread=21004,t:clientID=8024,Txt=Srvr: DstUserName1: kv-poliakov@MSK.I-TECO.RU(MSK.I-TECO.RU\kv-poliakov)
+16:45.028019-0,CONN,2,process=rphost,OSThread=15436,t:clientID=8024,t:applicationName=1CV8C,Txt=Srvr: DstUserName2: ITECO\kv-poliakov(ITECO\kv-poliakov)
+16:46.544000-0,CONN,0,process=rphost,OSThread=16340,Txt='Ping direction statistics: address=[::1]:1541,pingTimeout=5000,pingPeriod=1000,period=10172,packetsSent=10,avgResponseTime=0,maxResponseTime=0,packetsTimedOut=0,packetsLost=1,packetsLostAndFound=1'
+16:46.856001-1,DBMSSQL,3,process=rphost,p:processName=fto_zup31_test05,OSThread=15436,t:clientID=8024,t:applicationName=1CV8C,t:computerName=coocadapp02,t:connectID=152001,DBMS=DBMSSQL,DataBase=coocadapp02\fto_zup31_test05,Trans=0,dbpid=69,Sql="exec sp_executesql N'select xtype from sys.sysobjects where id = object_id(@P1)', N'@P1 nvarchar(128)', N'v8users'",Rows=1
+16:46.856005-1,DBMSSQL,3,process=rphost,p:processName=fto_zup31_test05,OSThread=15436,t:clientID=8024,t:applicationName=1CV8C,t:computerName=coocadapp02,t:connectID=152001,DBMS=DBMSSQL,DataBase=coocadapp02\fto_zup31_test05,Trans=0,dbpid=69,Sql='SELECT TOP 1 ID, Name, Descr, OSName, Changed, RolesID, Show, Data, EAuth, AdmRole, UsSprH
+FROM v8users
+WHERE EAuth IS NULL OR AdmRole IS NULL OR UsSprH IS NULL',Rows=0,RowsAffected=0
+16:47.763001-1,DBMSSQL,3,process=rphost,p:processName=fto_zup31_test05,OSThread=15436,t:clientID=8024,t:applicationName=1CV8C,t:computerName=coocadapp02,t:connectID=152001,DBMS=DBMSSQL,DataBase=coocadapp02\fto_zup31_test05,Trans=0,dbpid=69,Sql='SELECT MAX(Changed)
+FROM v8users',Rows=1,RowsAffected=-1
+16:47.763003-1,DBMSSQL,3,process=rphost,p:processName=fto_zup31_test05,OSThread=15436,t:clientID=8024,t:applicationName=1CV8C,t:computerName=coocadapp02,t:connectID=152001,DBMS=DBMSSQL,DataBase=coocadapp02\fto_zup31_test05,Trans=0,dbpid=69,Sql='SELECT TOP 1 ID, Name, Descr, OSName, Changed, RolesID, Show, Data, EAuth, AdmRole, UsSprH
+FROM v8users
+WHERE ID >= ? AND ID <> ?
+ORDER BY ID
+p_0: 0x00000000000000000000000000000000
+p_1: 0x952A5019EAE6A1F74023E7966E3EE1DE
+',Rows=1,RowsAffected=-1
+16:47.872011-1,DBMSSQL,3,process=rphost,p:processName=fto_zup31_test05,OSThread=15436,t:clientID=8024,t:applicationName=1CV8C,t:computerName=coocadapp02,t:connectID=152001,SessionID=1,DBMS=DBMSSQL,DataBase=coocadapp02\fto_zup31_test05,Trans=0,dbpid=69,Sql='SELECT TOP 1 ID, Name, Descr, OSName, Changed, RolesID, Show, Data, EAuth, AdmRole, UsSprH
+FROM v8users
+WHERE ID >= ? AND ID <> ?
+ORDER BY ID
+p_0: 0x00000000000000000000000000000000
+p_1: 0x952A5019EAE6A1F74023E7966E3EE1DE
+',Rows=1,RowsAffected=-1
+16:47.934001-0,EXCP,3,process=rphost,p:processName=fto_zup31_test05,OSThread=15436,t:clientID=8024,t:applicationName=1CV8C,t:computerName=coocadapp02,t:connectID=152001,Exception=a01f465c-ed70-442e-ada5-847668d7a41c,Descr='src\VResourceInfoBaseServerImpl.cpp(1460):
+a01f465c-ed70-442e-ada5-847668d7a41c: Идентификация пользователя не выполнена
+Неправильное имя или пароль пользователя'
+16:47.934002-0,EXCP,3,process=rphost,p:processName=fto_zup31_test05,OSThread=15436,t:clientID=8024,t:applicationName=1CV8C,t:computerName=coocadapp02,t:connectID=152001,Exception=580392e6-ba49-4280-ac67-fcd6f2180121,Descr='src\VResourceInfoBaseImpl.cpp(1103):
+580392e6-ba49-4280-ac67-fcd6f2180121: Неправильное имя пользователя или пароль
+55:38.023004-4937981,TLOCK,4,process=rphost,p:processName=1c_ka2,OSThread=24360,t:clientID=12868,t:applicationName=WebServerExtension,t:computerName=CS,t:connectID=93318,SessionID=123426,Usr=Сайт,DBMS=DBMSSQL,DataBase=CS\1c_ka2,Regions=InfoRg67265.DIMS,Locks='InfoRg67265.DIMS Shared Fld2373=0 Fld67266=""',WaitConnections=93258,connectionID=9eca6aca-5b08-474e-acf9-dfd7e8374572
+55:38.023014-0,TDEADLOCK,5,process=rphost,p:processName=1c_ka2,OSThread=24360,t:clientID=12868,t:applicationName=WebServerExtension,t:computerName=CS,t:connectID=93318,SessionID=123426,Usr=Сайт,DBMS=DBMSSQL,DataBase=CS\1c_ka2,DeadlockConnectionIntersections='93318 93727 InfoRg67265.DIMS Exclusive Fld2373=0 Fld67266="",93727 93318 InfoRg67265.DIMS Exclusive Fld2373=0 Fld67266=""'
+55:38.023015-0,EXCP,5,process=rphost,p:processName=1c_ka2,OSThread=24360,t:clientID=12868,t:applicationName=WebServerExtension,t:computerName=CS,t:connectID=93318,SessionID=123426,Usr=Сайт,DBMS=DBMSSQL,DataBase=CS\1c_ka2,Exception=DataBaseException,Descr='Конфликт блокировок при выполнении транзакции:
+Неустранимый конфликт блокировок'
+55:38.023016-5,TLOCK,4,process=rphost,p:processName=1c_ka2,OSThread=24360,t:clientID=12868,t:applicationName=WebServerExtension,t:computerName=CS,t:connectID=93318,SessionID=123426,Usr=Сайт,DBMS=DBMSSQL,DataBase=CS\1c_ka2,Regions=InfoRg67265.DIMS,Locks='InfoRg67265.DIMS Exclusive Fld2373=0 Fld67266=""',WaitConnections=93727
+

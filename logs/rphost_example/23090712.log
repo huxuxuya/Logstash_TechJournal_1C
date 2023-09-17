@@ -1,0 +1,4 @@
+31:43.253000-0,EXCP,1,process=rphost,OSThread=8352,OSException=rphost_8.3.22.1709_74a0e56b_20221128183143_8348 enabled external
+31:43.253001-0,EXCPCNTX,0,ClientComputerName=,ServerComputerName=,UserName=,ConnectString=
+31:43.253002-77735933001,EXCPCNTX,0,SrcName=PROC,process=rphost,OSThread=8352,RunAs=application,Port=2560
+31:47.269000-0,EXCP,1,process=rphost,OSThread=8352,DumpError=Created dump file: C:\Log\dumps\rphost_8.3.22.1709_74a0e56b_20221128183143_8348.mdmp

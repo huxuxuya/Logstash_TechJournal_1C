@@ -1,0 +1,2 @@
+57:25.286010-0,EXCP,0,process=rphost,OSThread=33764,ClientID=17,Exception=NetDataExchangeException,Descr='server_addr=(2)192.168.10.105:60049 descr=10054(0x00002746): Удаленный хост принудительно разорвал существующее подключение.  line=1141 file=D:\Jenkins\ci_builder2\WindowsBuild2_T4K5LAMEWDNJ\Platform\src\rtrsrvc\src\DataExchangeServerImpl.cpp'
+57:25.286011-0,EXCPCNTX,0,ClientComputerName=,ServerComputerName=,UserName=,ConnectString=
